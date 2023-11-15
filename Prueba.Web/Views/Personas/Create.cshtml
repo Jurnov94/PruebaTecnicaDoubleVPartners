@@ -1,0 +1,67 @@
+﻿@model Prueba.Shared.DTOs.PersonaDTO
+
+
+@{
+    ViewData["Title"] = "Create";
+}
+@if (TempData["ErrorMensaje"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMensaje"]
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-4 offset-4">
+
+
+        <h3>Crear Usuario</h3>
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Nombres" class="control-label"></label>
+                <input asp-for="Nombres" class="form-control" />
+                <span asp-validation-for="Nombres" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Apellidos" class="control-label"></label>
+                <input asp-for="Apellidos" class="form-control" />
+                <span asp-validation-for="Apellidos" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TipoIdentificacion" class="control-label"></label>
+                <select asp-for="TipoIdentificacion" asp-items="@ViewBag.TiposdeDocumento" class="form-control"></select>
+                <span asp-validation-for="TipoIdentificacion" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NumeroIdentificacion" class="control-label"></label>
+                <input asp-for="NumeroIdentificacion" class="form-control" />
+                <span asp-validation-for="NumeroIdentificacion" class="text-danger"></span>
+            </div>    
+            
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" type="email" />
+                <span asp-validation-for="Email" class="text-danger" ></span>
+            </div>
+
+
+            <div class="form-group mt-2">
+                <input type="submit" value="Crear" class="btn btn-primary" />
+                <a asp-controller="Home" asp-action="Index" class="btn btn-secondary"> Regresar </a>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

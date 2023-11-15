@@ -1,0 +1,14 @@
+C:\Users\JURNOV\Documents\Repos\PruebaTecnicaDoubleVPartners\Prueba.Shared\bin\Debug\net6.0\Prueba.Shared.deps.json
+C:\Users\JURNOV\Documents\Repos\PruebaTecnicaDoubleVPartners\Prueba.Shared\bin\Debug\net6.0\Prueba.Shared.runtimeconfig.json
+C:\Users\JURNOV\Documents\Repos\PruebaTecnicaDoubleVPartners\Prueba.Shared\bin\Debug\net6.0\Prueba.Shared.dll
+C:\Users\JURNOV\Documents\Repos\PruebaTecnicaDoubleVPartners\Prueba.Shared\bin\Debug\net6.0\Prueba.Shared.pdb
+C:\Users\JURNOV\Documents\Repos\PruebaTecnicaDoubleVPartners\Prueba.Shared\obj\Debug\net6.0\Prueba.Shared.csproj.AssemblyReference.cache
+C:\Users\JURNOV\Documents\Repos\PruebaTecnicaDoubleVPartners\Prueba.Shared\obj\Debug\net6.0\Prueba.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JURNOV\Documents\Repos\PruebaTecnicaDoubleVPartners\Prueba.Shared\obj\Debug\net6.0\Prueba.Shared.AssemblyInfoInputs.cache
+C:\Users\JURNOV\Documents\Repos\PruebaTecnicaDoubleVPartners\Prueba.Shared\obj\Debug\net6.0\Prueba.Shared.AssemblyInfo.cs
+C:\Users\JURNOV\Documents\Repos\PruebaTecnicaDoubleVPartners\Prueba.Shared\obj\Debug\net6.0\Prueba.Shared.csproj.CoreCompileInputs.cache
+C:\Users\JURNOV\Documents\Repos\PruebaTecnicaDoubleVPartners\Prueba.Shared\obj\Debug\net6.0\Prueba.Shared.dll
+C:\Users\JURNOV\Documents\Repos\PruebaTecnicaDoubleVPartners\Prueba.Shared\obj\Debug\net6.0\refint\Prueba.Shared.dll
+C:\Users\JURNOV\Documents\Repos\PruebaTecnicaDoubleVPartners\Prueba.Shared\obj\Debug\net6.0\Prueba.Shared.pdb
+C:\Users\JURNOV\Documents\Repos\PruebaTecnicaDoubleVPartners\Prueba.Shared\obj\Debug\net6.0\Prueba.Shared.genruntimeconfig.cache
+C:\Users\JURNOV\Documents\Repos\PruebaTecnicaDoubleVPartners\Prueba.Shared\obj\Debug\net6.0\ref\Prueba.Shared.dll

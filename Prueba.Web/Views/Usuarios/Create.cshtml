@@ -1,0 +1,48 @@
+﻿@model Prueba.Shared.DTOs.UsuarioDTO
+
+
+@{
+    ViewData["Title"] = "Create";
+}
+@if (TempData["ErrorMensaje"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMensaje"]
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-4 offset-4">
+
+
+        <h3>Crear Usuario</h3>
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="NombreUsuario" class="control-label"></label>
+                <input asp-for="NombreUsuario" class="form-control" />
+                <span asp-validation-for="NombreUsuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mt-2">
+                <input type="submit" value="Crear" class="btn btn-primary" />
+                <a asp-controller="Home" asp-action="Index" class="btn btn-secondary"> Regresar </a>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

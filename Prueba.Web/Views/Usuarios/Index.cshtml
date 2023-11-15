@@ -1,0 +1,78 @@
+﻿@model IEnumerable<Prueba.Shared.DTOs.UsuarioDTO>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="row">
+    <div class="col-11 g-2">
+        <h3>Usuarios</h3>
+    </div>
+    <div class="col-1">
+        <a class="btn btn-primary btn-flex h-40px border-0 fw-bolder px-4 px-lg-6" asp-asp-controller="Usuarios" asp-action="Create">Nuevo</a>
+    </div>
+</div>
+
+<div class="table-responsive" id="UsuariosTable">
+    <table id="MyTable" class="table table-striped table-row-bordered gy-5 gs-7">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NombreUsuario)
+                </th>
+                
+                <th>
+                    @Html.DisplayNameFor(model => model.FechaCreacion)
+                </th>              
+                <th style="width: 22%;"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NombreUsuario)
+                    </td>
+                    
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FechaCreacion)
+                    </td>
+                    
+                    <td>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+     
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#UsuariosTable').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+                },
+                "aLengthMenu": [
+                    [25, 50, 100, 200, -1],
+                    [25, 50, 100, 200, "Todos"]
+                ]
+            });
+        });
+    </script>
+
+ 
+}
+
+
+
